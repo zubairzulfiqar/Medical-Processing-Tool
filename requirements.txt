@@ -1,0 +1,9 @@
+pandas
+numpy
+scipy
+matplotlib
+seaborn
+PyQt5
+opencv-python
+Pillow
+neurokit2

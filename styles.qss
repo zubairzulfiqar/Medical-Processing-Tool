@@ -1,0 +1,487 @@
+/* ============================================================ */
+/* 1. GLOBAL APPLICATION STYLES                                 */
+/* ============================================================ */
+QMainWindow {
+    background-color: #F7F8FC;
+}
+
+QWidget {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 10.5pt;
+    color: #1F2937;
+}
+
+/* Container and Scroll backgrounds */
+QScrollArea, QTabWidget, QScrollArea > QWidget > QWidget {
+    background-color: #F7F8FC;
+    border: none;
+}
+
+/* ============================================================ */
+/* 2. TEXT HIERARCHY & TITLES                                   */
+/* ============================================================ */
+QLabel[objectName="PanelTitle"] {
+    color: #1F2A44;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+QGroupBox {
+    background-color: #FFFFFF;
+    color: #1F2937;
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+    margin-top: 14px;
+    padding-top: 16px;
+}
+
+QGroupBox::title {
+    color: #1F2A44;
+    font-weight: bold;
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 8px;
+}
+
+QLabel {
+    color: #334155;
+}
+
+QLineEdit::placeholder {
+    color: #94A3B8;
+}
+
+/* ============================================================ */
+/* 3. INPUT FIELDS                                              */
+/* ============================================================ */
+QLineEdit, QSpinBox, QDoubleSpinBox, QComboBox, QDateTimeEdit {
+    background-color: #F8FAFF;
+    border: 1px solid #D6DEEA;
+    border-radius: 6px;
+    padding: 8px;
+    color: #1F2937;
+    min-height: 28px;
+}
+
+QLineEdit:focus, QSpinBox:focus, QDoubleSpinBox:focus, QComboBox:focus {
+    border: 1px solid #2563EB;
+}
+
+#dateInput {
+    background-color: #FFFFFF;
+    border: 2px solid #2563EB;
+    border-radius: 5px;
+    padding: 5px;
+    color: #1F2A44;
+    font-size: 14px;
+}
+
+#dateInput:focus {
+    border: 2px solid #14B8A6;
+}
+
+/* ============================================================ */
+/* 4. SIDEBAR NAVIGATION                                        */
+/* ============================================================ */
+#SidebarWidget {
+    background-color: #1B2642;
+}
+
+#SidebarWidget QPushButton {
+    background-color: #22314F;
+    color: white;
+    text-align: left;
+    margin-bottom: 8px;
+    padding: 12px 14px;
+    font-size: 11.5pt;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#SidebarWidget QPushButton:hover {
+   background-color: #2A3B63;
+}
+#SidebarWidget QPushButton:checked {
+    background-color: #FFFFFF;
+    color: #1F2A44;            /* Text becomes navy when selected */
+    font-weight: bold;
+}
+
+/* ============================================================ */
+/* 5. DATA TABLE & SCROLLBARS                                   */
+/* ============================================================ */
+QTableWidget {
+    background-color: #FFFFFF;
+    gridline-color: #EDF2F7;
+    border: 1px solid #E2E8F0;
+    selection-background-color: #DCE7FF;
+}
+
+QHeaderView::section {
+    color: #1F2A44;
+    background-color: #F3F6FB;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #E2E8F0;
+}
+
+/* Base button styling */
+QPushButton {
+    border-radius: 6px;
+    padding: 8px 14px;
+    min-height: 32px;
+}
+QPushButton:disabled {
+    background-color: #E5E7EB;
+    color: #94A3B8;
+    border: 1px solid #E2E8F0;
+}
+
+#MainScrollArea {
+    background-color: #F4F6FB;
+}
+
+QScrollBar:vertical {
+    background: #E2E8F0;
+    width: 14px;
+    border: none;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #94A3B8;
+    min-height: 30px;
+    border-radius: 7px;
+    margin: 2px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #64748B;
+}
+
+/* ============================================================ */
+/* 6. BUTTON STYLES (COLOR CODED)                               */
+/* ============================================================ */
+
+QPushButton#saveButton,QPushButton#refreshIdButton,QPushButton#LoadPastFFTButton{
+    background-color:#14B8A6;
+    color: white;
+    font-weight: bold;
+    
+}
+QPushButton#saveButton:hover,QPushButton#refreshIdButton:hover,QPushButton#LoadPastFFTButton:hover {
+    background-color: #0F9D8A;
+}
+QPushButton#FindImgsButton{
+    background-color:#14B8A6;
+    color: white;
+    height: 22px;
+    font-weight: bold;
+}
+QPushButton#FindImgsButton:hover{
+    background-color: #0F9D8A;
+
+}
+
+/* PRIMARY ACTION (BLUE) */
+QPushButton#LoadCSVButton, QPushButton#RefreshTableButton, QPushButton#ScatterPlotButton, 
+QPushButton#DisplaySignalButton, QPushButton#ComputeFFTButton, QPushButton#ApplyZoom, 
+ QPushButton#ApplyBlurButton, 
+QPushButton#ApplyThresholdButton, QPushButton#VizScatterBtn, QPushButton#VizTimeSeriesBtn, 
+QPushButton#VizFFTBtn, QPushButton#ApplyPlotButton, QPushButton#UploadImageButton {
+    background-color: #2563EB;
+    color: white;
+    border: 1px solid #1E40AF;
+    font-weight: bold;
+}
+QPushButton#LoadCSVButton:hover, QPushButton#RefreshTableButton:hover, QPushButton#ScatterPlotButton:hover, 
+QPushButton#DisplaySignalButton:hover, QPushButton#ComputeFFTButton:hover, QPushButton#ApplyZoom:hover, 
+ QPushButton#ApplyBlurButton:hover, 
+QPushButton#ApplyThresholdButton:hover, QPushButton#VizScatterBtn:hover, QPushButton#VizTimeSeriesBtn:hover, 
+QPushButton#VizFFTBtn:hover,QPushButton#saveButton:hover, QPushButton#ApplyPlotButton:hover, QPushButton#UploadImageButton:hover {
+    background-color:#1D4ED8;
+}
+QPushButton#LoadImageButton{
+    background-color: #2563EB;
+    color: white;
+    border: 1px solid #1E40AF;
+    font-weight: bold;
+    height: 20px;
+}
+QPushButton#LoadImageButton:hover{
+    background-color:#1D4ED8;
+}
+
+QPushButton#AnalysisApplyPlotButton{
+    background-color: #2563EB;
+    color: white;
+    border: 1px solid #1E40AF;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+QPushButton#AnalysisApplyPlotButton:hover{
+    background-color:#1D4ED8;
+}
+
+
+/* DANGER (RED) */
+QPushButton#ResetButton, QPushButton#ResetView, QPushButton#HeatmapButton, QPushButton#VizHeatmapBtn {
+    background-color: #E4572E;
+    color: white;
+    border: 1px solid #C2410C;
+    font-weight: bold;
+}
+
+/* PAGINATION */
+QPushButton#PreviousPageButton, QPushButton#NextPageButton {
+    background-color: white;
+    border: 1px solid #E1E6EF;
+    border-radius: 20px;
+    min-width: 40px;
+    min-height: 40px;
+    font-size: 16px;
+}
+
+QPushButton#PreviousPageButton:hover, QPushButton#NextPageButton:hover {
+    background-color: #EEF2F7;
+}
+
+/* ============================================================ */
+/* 7. IMAGE PROCESSING & SLIDERS                                */
+/* ============================================================ */
+QWidget#OriginalImageContainer { 
+    border: 2px solid #2563EB; 
+    border-radius: 8px; 
+    background-color: white; 
+}
+
+QWidget#ProcessedImageContainer { 
+    border: 2px solid #E4572E; 
+    border-radius: 8px; 
+    background-color: white; 
+}
+
+QSlider::handle:horizontal {
+    background: #2563EB;
+    width: 16px;
+    height: 16px;
+    margin: -5px 0;
+    border-radius: 8px;
+}
+
+QSlider::groove:horizontal {
+    border: 1px solid #D6DEE8;
+    height: 6px;
+    background: #EDF2F7;
+    border-radius: 3px;
+}
+
+/* ============================================================ */
+/* 8. SPECIFIC IMAGE PROCESSING BUTTONS                        */
+/* ============================================================ */
+
+QPushButton#GrayscaleButton, 
+QPushButton#EdgeButton, 
+QPushButton#InsertButton, 
+QPushButton#ThresholdButton {
+    padding: 8px 14px;
+    font-weight: bold;
+    background-color: #2563EB;
+    color: white;
+    border: 1px solid #1E40AF;
+    /* Button sizing */
+    min-width: 140px;
+    min-height: 34px;
+}
+
+QPushButton#EdgeButton:hover,
+QPushButton#GrayscaleButton:hover,
+QPushButton#InsertButton:hover, 
+QPushButton#ThresholdButton:hover {
+    background-color: #1D4ED8;
+}
+
+/* Threshold Button - Vibrant Blue */
+QPushButton#ThresholdButton {
+    background-color: #2563EB;
+    color: white;
+    border: 1px solid #1E40AF;
+    font-weight: bold;
+}
+
+QPushButton#ThresholdButton:hover {
+    background-color: #1D4ED8;
+}
+/* Styling for Save Processed Button */
+QPushButton#SaveToDbButton {
+    background-color:#14B8A6;
+    color: white;
+    font-weight: bold;
+    font-size: 11pt;
+    border-radius: 6px;
+    padding: 10px 20px;
+    border: 1px solid #0F766E;
+}
+
+QPushButton#SaveToDbButton:hover {
+    background-color: #0F9D8A;
+}
+
+/* Styling for Reset Button */
+QPushButton#ResetButton {
+    background-color: #E4572E; /* Red/Coral */
+    color: white;
+    font-weight: bold;
+    font-size: 11pt;
+    border-radius: 6px;
+    padding: 10px 20px;
+    border: 1px solid #C2410C;
+}
+
+QPushButton#ResetButton:hover {
+    background-color: #F05A28;
+}
+/* Threshold Slider Styling */
+QSlider#ThresholdSlider::groove:horizontal {
+    border: 1px solid #D6DEE8;
+    height: 8px;
+    background: #F1F5F9;
+    margin: 2px 0;
+    border-radius: 4px;
+}
+
+QSlider#ThresholdSlider::handle:horizontal {
+    background: #2563EB;
+    border: 1px solid #1E40AF;
+    width: 12px;
+    height: 12px;
+    margin: -5px 0;
+    border-radius: 9px;
+}
+
+/* Styling for the new column container */
+QFrame#ToolsColumnLeft {
+    background-color: #F8FAFF; /* Light grey/blue tint */
+    border: 1px solid #D6DEEA;
+    border-radius: 8px;
+    padding: 0px;
+}
+
+/* Optional: change spacing for labels just inside this column */
+QFrame#ToolsColumnLeft QLabel {
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+/* Styling for the Column 1 Container */
+QFrame#ToolsColumnRight {
+    background-color: #F8FAFF; /* Light grey/blue tint */
+    border: 1px solid #D6DEEA;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 2px;
+}
+
+/* CRUD Operation Buttons Styling */
+QPushButton#UpdateButton, 
+QPushButton#DeleteButton, 
+QPushButton#SearchButton, 
+QPushButton#ClearSearchButton {
+    max-width: 120px;
+    min-width: 120px;
+    padding: 8px 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    color: white;
+}
+
+QPushButton#DeleteButton {
+    min-width: 140px;
+}
+
+QPushButton#UpdateButton {
+    background-color: #F39C12; /* Orange */
+}
+
+QPushButton#DeleteButton {
+    background-color: #E74C3C; /* Red */
+}
+
+QPushButton#SearchButton {
+    background-color: #2563EB; /* Blue */
+}
+
+QPushButton#ClearSearchButton {
+    background-color: #94A3B8; /* Grey */
+}
+
+/* Increase the width of the patient selection input */
+#AnalysisPatientID, QComboBox#AnalysisPatientID {
+    min-width: 300px; /* Increased width */
+}
+
+/* Hover effects for better UX */
+QPushButton#UpdateButton:hover { background-color: #E67E22; }
+QPushButton#DeleteButton:hover { background-color: #C0392B; }
+QPushButton#SearchButton:hover { background-color: #1D4ED8; }
+QPushButton#ClearSearchButton:hover { background-color: #64748B; }
+
+QDoubleSpinBox {
+    height: 30px;
+    padding: 2px;
+    border: 1px solid #D1D5DB;
+    border-radius: 4px;
+}
+
+/* Ensure the containers don't have conflicting internal margins */
+QFrame#ToolsColumnLeft, QFrame#ToolsColumnRight {
+    padding: 0px;
+}
+/* Already in your styles.qss */
+QPushButton#VizButton, 
+QPushButton#TimeSeriesButton, 
+QPushButton#FFTPlotButton {
+    background-color: #2563EB;
+    color: white;
+    border: 1px solid #1E40AF;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+QPushButton#VizButton:hover, 
+QPushButton#TimeSeriesButton:hover, 
+QPushButton#FFTPlotButton:hover {
+    background-color: #1D4ED8;
+}
+/* Styling for Heatmap Button (Purple/Insight) */
+QPushButton#VizHeatmapButton {
+    background-color:#E4572E;
+    color: white;
+    font-weight: bold;
+    min-height: 38px;
+    border-radius: 6px;
+    padding: 6px 14px;
+    min-width: 200px;
+}
+
+QPushButton#VizHeatmapButton:hover {
+    background-color:#C2410C;
+}
+
+/* Styling for Process Medical Image Button (Teal/Action) */
+QPushButton#ProcessImageButton {
+    background-color:#14B8A6;
+    color: white;
+    font-weight: bold;
+    min-height: 38px;
+    border-radius: 6px;
+    padding: 6px 14px;
+    min-width: 200px;
+}
+
+QPushButton#ProcessImageButton:hover {
+    background-color: #0F9D8A;
+}
