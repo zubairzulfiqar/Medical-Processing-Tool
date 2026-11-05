@@ -2,6 +2,8 @@
 
 A desktop application for managing patient health data, analyzing biomedical signals (ECG/EEG), processing medical images, and creating interactive visualizations.
 
+![Data management tab](docs/screenshot.png)
+
 ## Overview
 This PyQt5 app loads patient data from CSV, stores it in SQLite, and provides a multi-tab GUI for:
 - Patient record management (CRUD)
