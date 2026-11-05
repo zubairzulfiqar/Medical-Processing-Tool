@@ -1,2 +1,12 @@
-health_metrics.db
+# runtime database
 *.db
+*.db-shm
+*.db-wal
+# python
+__pycache__/
+*.pyc
+venv/
+.venv/
+# os
+.DS_Store
+Thumbs.db

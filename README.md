@@ -95,7 +95,7 @@ python main.py
 
 ## Project Structure
 ```
-pythonPYQT/
+Medical-Processing-Tool/
 +-- main.py                # App entry point
 +-- gui_app.py             # PyQt5 GUI and workflows
 +-- database_manager.py    # SQLite schema + CRUD + metadata

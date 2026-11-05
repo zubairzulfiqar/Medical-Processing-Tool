@@ -1,4 +1,4 @@
-# main.py (MODIFIED)
+# main.py
 import sys
 import os
 from PyQt5.QtWidgets import QApplication, QMessageBox
